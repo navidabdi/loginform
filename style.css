@@ -84,7 +84,14 @@ body {
   margin-bottom: 1.5rem;
   font-size: 1.2rem;
   border: 1px solid var(--color-3);
+  font-weight: 300;
 }
+
+.login__inputs input::placeholder {
+  color: var(--color-3);
+  font-size: 0.95rem;
+}
+
 .login__inputs input:focus {
   outline: 2px solid var(--color-4);
 }
@@ -104,7 +111,8 @@ body {
 }
 
 .forgot__password {
-  text-align: right;
+  width: fit-content;
+  align-self: self-end;
   margin-bottom: 0.5rem;
   text-decoration: none;
   color: var(--color-3);
