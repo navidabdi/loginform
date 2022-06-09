@@ -113,3 +113,20 @@ body {
 .forgot__password:hover {
   color: var(--color-4);
 }
+
+@media screen and (min-width: 1200px) {
+  :root {
+    /* Font Size */
+    font-size: 100%;
+  }
+  .login {
+    width: 1200px;
+    flex-direction: row-reverse;
+  }
+  .login__inputs {
+    padding-right: 7rem;
+  }
+  .login__img img {
+    width: 100%;
+  }
+}
