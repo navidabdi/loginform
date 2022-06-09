@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Text Colors */
+  --color-1: #3e3b38;
+  --color-2: #fff;
+
+  /* Link Colors */
+  --color-3: #aa9d97;
+
+  /* Background colors */
+  --color-4: #9c644b;
+  --color-5: #a44316;
+
+  /* Transition */
+  --transition-1: all 0.3s ease;
+
+  /* Font Size */
+  font-size: 85%;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  color: var(--color-1);
+  overflow-x: hidden;
+  background-color: #fffaf8;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login__inputs {
+  flex: 1;
+}
+
+.login__img {
+  flex: 1;
+  text-align: center;
+}
+
+.login__inputs h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 900;
+  font-size: 2.8rem;
+  color: var(--color-1);
+}
+
+.login__img img {
+  width: 65%;
+}
+
+.login__inputs form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login__inputs input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  border: 1px solid var(--color-3);
+}
+.login__inputs input:focus {
+  outline: 2px solid var(--color-4);
+}
+
+.login__btn {
+  padding: 0.9rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  background-color: var(--color-4);
+  color: var(--color-2);
+  transition: var(--transition-1);
+}
+.login__btn:hover {
+  background-color: var(--color-5);
+}
+
+.forgot__password {
+  text-align: right;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  color: var(--color-3);
+  transition: var(--transition-1);
+}
+.forgot__password:hover {
+  color: var(--color-4);
+}
